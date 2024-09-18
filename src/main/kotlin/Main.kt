@@ -36,6 +36,9 @@ fun main() {
 
     // ch_6_numbers
     ch6Numbers()
+
+    // ch_7_array
+    ch7Array()
 }
 
 // ch_2_Char
@@ -158,6 +161,30 @@ fun ch6Numbers() {
 //    toChar(): Char
     val readableNumber = 1_000_000
     print(readableNumber)
+
+
+}
+
+fun ch7Array() {
+//    Membuat Array
+//    Bisa menggunakan arrayOf dan arraynya bersifat dinamis
+    val arr = arrayOf(1,2,3, "Nurdin", true)
+
+    for(value in arr) {
+        println("value: $value")
+    }
+//    Membuat array deng tipedata primitf
+//    intArrayOf() : IntArray
+//    booleanArrayOf() : BooleanArray
+//    charArrayOf() : CharArray
+//    longArrayOf() : LongArray
+//    shortArrayOf() : ShortArray
+//    byteArrayOf() : ByteArray
+    val arrNumber: IntArray = intArrayOf(1,2,3,4) // hanya menerima data berupa number
+    for(value in arrNumber) {
+        println("value: $value")
+    }
+
 
 
 }
