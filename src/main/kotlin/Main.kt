@@ -45,6 +45,9 @@ fun main() {
 
     // ch_9_Safe_Call_And_Elvis_Operator
     ch9SafeCallAndElvisOperator()
+
+    // ch_10_function
+    ch10Function()
 }
 
 // ch_2_Char
@@ -217,4 +220,34 @@ fun ch9SafeCallAndElvisOperator() {
 //    Kalau null maka textLength = 7
     val textLenght = name?.length ?: 7 // if (text != null) text.length else 7
     println(textLenght)
+}
+
+fun ch10Function() {
+    fun setUser(name: String, age: Int): String {
+        return "Your name is $name, and you $age years old"
+    }
+
+    var user = setUser("Nurdin", 20)
+    println(user)
+
+//    Bisa juga gini jika hanya return 1 value
+    fun setUser2(name: String, age: Int) = "Your name is $name, and you $age years old"
+    user = setUser2("Hishasy", 20)
+    println(user)
+
+//    Void function
+//    Unit adalah void
+    fun sayHello(name: String): Unit {
+        println("Hello $name my name is Nurdin")
+    }
+
+    sayHello("Sunny")
+
+//    Void juga
+    fun sayHi(name: String) {
+        println("Hi $name my name is Nurdin")
+    }
+
+    sayHi("Hishasy")
+
 }
