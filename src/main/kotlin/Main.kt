@@ -27,6 +27,9 @@ fun main() {
 
     // ch_3_string
     ch3String()
+
+    // ch_4_string_template
+    ch4StringTemplate()
 }
 
 // ch_2_Char
@@ -78,4 +81,10 @@ fun ch3String(){
     """.trimIndent()
 
     println(rawString)
+}
+
+fun ch4StringTemplate() {
+    val age = 20
+    // bisa juga melakukan expression di  dalam string template
+    println("Your age ${if (age > 20) "is $age not eligble to this" else "is $age, you eligible" }")
 }
