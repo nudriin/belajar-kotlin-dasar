@@ -48,6 +48,9 @@ fun main() {
 
     // ch_10_function
     ch10Function()
+
+    // ch11_named_and_default_argument
+    ch11NamedAndDefaultArgument()
 }
 
 // ch_2_Char
@@ -249,5 +252,36 @@ fun ch10Function() {
     }
 
     sayHi("Hishasy")
+
+}
+
+fun ch11NamedAndDefaultArgument() {
+    fun getFullName(first: String, middle: String, last: String): String {
+        return "$first $middle $last"
+    }
+
+//    Menggunakan named argument
+    var fullName = getFullName(first = "Nurdin", middle = "Hishasy", last = "Sunny")
+    println(fullName)
+
+//    Bisa diubah untuk urutannya
+    fullName = getFullName(middle = "Hishasy" , first = "Nurdin", last = "Sunny")
+    println(fullName)
+
+
+//    Bisa memberikan default value
+    fun getFullNameWithDefault(
+        first: String = "Mr.",
+        middle: String = "Don't",
+        last: String = "Know"): String {
+        return "$first $middle $last"
+    }
+
+//    Bisa begini, karena sudah memiliki default value
+    fullName = getFullNameWithDefault()
+    println(fullName)
+
+    fullName = getFullNameWithDefault(middle = "Nurdin")
+    println(fullName)
 
 }
