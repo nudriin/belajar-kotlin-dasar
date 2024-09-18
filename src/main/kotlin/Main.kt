@@ -21,4 +21,24 @@ fun main() {
     val b: Int = 30
 
     println(a + b)
+
+    char()
+}
+
+// ch_2_Char
+fun char(){
+    // hanya dapat menyimpan 1 huruf tunggal saja
+    var char: Char = 'A'
+
+//    AKAN ERROR
+//    var char2: Char = 'ABC'
+
+    // bisa di increment dan akan bertambah ke a-b-c-d-e-
+    println("CHAR : "+ char++)
+    println("CHAR : "+ char++)
+    println("CHAR : "+ char++)
+    println("CHAR : "+ char++)
+    println("CHAR : "+ char--)
+    println("CHAR : "+ char--)
+
 }
