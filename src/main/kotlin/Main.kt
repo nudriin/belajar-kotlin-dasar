@@ -30,6 +30,9 @@ fun main() {
 
     // ch_4_string_template
     ch4StringTemplate()
+
+    // ch_5_if_expression
+    ch5IfExpression()
 }
 
 // ch_2_Char
@@ -87,4 +90,29 @@ fun ch4StringTemplate() {
     val age = 20
     // bisa juga melakukan expression di  dalam string template
     println("Your age ${if (age > 20) "is $age not eligble to this" else "is $age, you eligible" }")
+}
+
+fun ch5IfExpression() {
+    val openHour = 7
+    val now = 12
+    var office: String
+    if(now > openHour) {
+        office = "Open now"
+    } else {
+        office = "closed"
+    }
+
+    println(office)
+    println()
+
+    // bisa juga seperti ini
+    office = if(now > openHour) {
+        "Office is open"
+    } else {
+        "Office is closed"
+    }
+    println(office)
+    println()
+
+
 }
