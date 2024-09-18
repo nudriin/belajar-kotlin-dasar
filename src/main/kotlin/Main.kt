@@ -33,6 +33,9 @@ fun main() {
 
     // ch_5_if_expression
     ch5IfExpression()
+
+    // ch_6_numbers
+    ch6Numbers()
 }
 
 // ch_2_Char
@@ -113,6 +116,48 @@ fun ch5IfExpression() {
     }
     println(office)
     println()
+
+
+}
+
+fun ch6Numbers() {
+    val intNumber = 100
+    val longNumber: Long = 100
+    val longNumber2 = 100L // Long number dengan suffix L
+    val shortNumber: Short = 10
+    val byteNumber = 0b11010010 // Angka bit
+    val doubleNumber: Double = 1.3 // maksimal 15-16 angka di belakang koma.
+    val floatNumber: Float = 0.123456789f    // sampai 6-7 angka di belakang koma.
+
+    println(intNumber)
+    println(longNumber)
+    println(longNumber2)
+    println(shortNumber)
+    println(byteNumber)
+    println(doubleNumber)
+    println(floatNumber) // yang terbaca hanya 0.1234567
+
+    // Cek nilai maksimal dan minimal dari int
+    val maxInt = Int.MAX_VALUE
+    val minInt = Int.MIN_VALUE
+
+    println(maxInt)
+    println(minInt)
+
+    val stringNumber: String ="20"
+    val toIntString: Int = stringNumber.toInt()  // casting tipe data
+
+    println(20 + toIntString)
+
+//    toByte(): Byte
+//    toShort(): Short
+//    toInt(): Int
+//    toLong(): Long
+//    toFloat(): Float
+//    toDouble(): Double
+//    toChar(): Char
+    val readableNumber = 1_000_000
+    print(readableNumber)
 
 
 }
