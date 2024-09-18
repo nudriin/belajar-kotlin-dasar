@@ -39,6 +39,9 @@ fun main() {
 
     // ch_7_array
     ch7Array()
+
+    // ch_8_nullable
+    ch8Nullable()
 }
 
 // ch_2_Char
@@ -185,6 +188,20 @@ fun ch7Array() {
         println("value: $value")
     }
 
+
+
+}
+
+fun ch8Nullable() {
+    val name: String? = null; // boleh
+//    val name2: String = null; // akan error
+
+    var obj: Any = "Nurdin"
+
+//    is digunakan untuk cek tipe data sebuah object
+    if(obj is String){
+        println("String lenght ${obj.length}")
+    }
 
 
 }
