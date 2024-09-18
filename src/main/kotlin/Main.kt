@@ -22,7 +22,11 @@ fun main() {
 
     println(a + b)
 
+    // ch_2_char
     char()
+
+    // ch_3_string
+    ch3String()
 }
 
 // ch_2_Char
@@ -41,4 +45,37 @@ fun char(){
     println("CHAR : "+ char--)
     println("CHAR : "+ char--)
 
+}
+
+fun ch3String(){
+    val text = "NURDIN"
+    val d = text[3] // mengambil karakter D
+
+    println(text)
+    println(d)
+
+    // bisa juga kita looping seperti id bawah ini
+    for(char in text) {
+        print("-$char-")
+    }
+    println()
+
+    // escape string
+    // var text2 = "Hallo nama saya "Nurdin"" // akan error
+    val text2 = "Halo nama saya \"Nurdin\"" // membuat tanda petik dengan escaped
+    println(text2)
+
+    val unicode = "Unicode test: \u00A9"
+    println(unicode)
+
+    // RAW STRING
+    // membuat raw string
+    val rawString = """
+        NAMA
+        SAYA
+        NURDIN
+        HISHASY
+    """.trimIndent()
+
+    println(rawString)
 }
