@@ -49,8 +49,11 @@ fun main() {
     // ch_10_function
     ch10Function()
 
-    // ch11_named_and_default_argument
+    // ch_11_named_and_default_argument
     ch11NamedAndDefaultArgument()
+
+    // ch_12_vararg
+    ch12Vararg()
 }
 
 // ch_2_Char
@@ -284,4 +287,12 @@ fun ch11NamedAndDefaultArgument() {
     fullName = getFullNameWithDefault(middle = "Nurdin")
     println(fullName)
 
+}
+
+fun ch12Vararg() {
+    fun sets(name: String, vararg number: Int): Int {
+        return  number.size
+    }
+    val size = sets("Kotlin", 10, 10, 20, 30, 40)
+    println(size)
 }
