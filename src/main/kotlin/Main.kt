@@ -42,6 +42,9 @@ fun main() {
 
     // ch_8_nullable
     ch8Nullable()
+
+    // ch_9_Safe_Call_And_Elvis_Operator
+    ch9SafeCallAndElvisOperator()
 }
 
 // ch_2_Char
@@ -204,4 +207,14 @@ fun ch8Nullable() {
     }
 
 
+}
+
+fun ch9SafeCallAndElvisOperator() {
+    val name: String? = null
+    println(name?.length) // safe call
+
+//    Kalau tidak null maka textLenght = name.length,
+//    Kalau null maka textLength = 7
+    val textLenght = name?.length ?: 7 // if (text != null) text.length else 7
+    println(textLenght)
 }
